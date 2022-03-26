@@ -1,3 +1,76 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1, h3, h4, h5, h6 {
+  font-family: Shrikhand;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+header {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.3);
+}
+header h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.localisation {
+  background-color: #f3f3f3;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.localisation .localisation_text {
+  margin-left: 0.5rem;
+  font-weight: 700;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem;
+  background-color: #fafafa;
+}
+.hero h2 {
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+.hero p {
+  opacity: 55%;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+.hero .hero_btn {
+  background: #ff79da;
+  background: linear-gradient(167deg, #ff79da 9%, #9356dc 81%);
+  padding: 1rem;
+  border-radius: 5rem;
+  color: white;
+}
 
 /*# sourceMappingURL=style.css.map */
