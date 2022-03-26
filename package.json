@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+      "sass": "sass --watch ./sass/main.scss:.public/css/style.css"
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexis77360/ohmyfood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexis77360/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/alexis77360/ohmyfood#readme"
+}
