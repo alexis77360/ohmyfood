@@ -21,7 +21,7 @@ ul {
   padding: 0px;
 }
 
-h1, h3, h4, h5, h6 {
+h1, h4, h5, h6 {
   font-family: Shrikhand;
 }
 
@@ -111,6 +111,41 @@ header h1 {
 }
 .fonct_card .fonct_text {
   font-weight: 900;
+}
+
+/* //! Restaurant */
+.resto {
+  padding: 1.5rem;
+  margin-top: 3.5rem;
+  background-color: #f3f3f3;
+}
+.resto .card {
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: white;
+  margin-top: 1.5rem;
+}
+.resto .card img {
+  object-fit: cover;
+  width: 100%;
+  height: 10rem;
+}
+.resto .card h3 {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.resto .card .card_text {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: -0.5rem;
+  position: relative;
+}
+.resto .card .card_text .card_icon {
+  position: absolute;
+  right: 0;
 }
 
 .btn {
