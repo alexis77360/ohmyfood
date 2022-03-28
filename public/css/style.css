@@ -16,8 +16,9 @@ a {
   color: #000;
 }
 
-li {
-  list-style-type: none;
+ul {
+  margin: 0px;
+  padding: 0px;
 }
 
 h1, h3, h4, h5, h6 {
@@ -65,12 +66,60 @@ header h1 {
   font-weight: 500;
   margin-bottom: 3rem;
 }
-.hero .hero_btn {
+
+/* //! Titre + Reset */
+.fonct {
+  margin: 1.5rem;
+}
+.fonct h2 {
+  margin-bottom: 1.5rem;
+  font-weight: 900;
+}
+.fonct p {
+  margin: 0;
+}
+
+/* //! Cards de fonctionnement */
+.fonct_card {
+  display: flex;
+  background-color: #f3f3f3;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 1.5rem;
+  box-shadow: 4px 4px 3px 0px rgba(58, 56, 56, 0.1);
+  position: relative;
+}
+.fonct_card .fonct_number {
+  position: absolute;
+  left: -0.7rem;
+  top: 1.2rem;
+  font-size: 0.7rem;
+  background-color: #9356DC;
+  padding: 0.5rem;
+  text-align: center;
+  line-height: 0.5rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  color: white;
+}
+.fonct_card .fonct_icon {
+  color: grey;
+  margin-right: 1rem;
+  margin-left: 0.75rem;
+  font-weight: 900;
+}
+.fonct_card .fonct_text {
+  font-weight: 900;
+}
+
+.btn {
   background: #ff79da;
   background: linear-gradient(167deg, #ff79da 9%, #9356dc 81%);
   padding: 1rem;
   border-radius: 5rem;
   color: white;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */
