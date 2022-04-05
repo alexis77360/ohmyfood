@@ -190,6 +190,24 @@ body {
   font-weight: 700;
 }
 
+.order-wrapper {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+}
+
+.btn-order {
+  background: #ff79da;
+  background: linear-gradient(167deg, #ff79da 9%, #9356dc 81%);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-radius: 5rem;
+  color: white;
+  font-weight: 700;
+}
+
 footer {
   background-color: #302f2f;
   color: white;

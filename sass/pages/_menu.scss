@@ -19,9 +19,10 @@
 .hero-menu {
     display: flex;
     justify-content: space-between;
+
     &__titre {
         font-family: Shrikhand;
-  }
+    }
 
     &__logo {
         opacity: 50%;
@@ -30,19 +31,17 @@
     }
 }
 
-    
+.food {
 
-.food{
-
-    h3{
+    h3 {
         margin-top: 2rem;
         position: relative;
         text-transform: uppercase;
-         padding-bottom: 5px;
-         width: 45px;
+        padding-bottom: 5px;
+        width: 45px;
     }
 
-    h3::after{
+    h3::after {
         content: "";
         position: absolute;
         width: 100%;
@@ -51,32 +50,34 @@
         border-bottom: solid 3px $green;
     }
 
-        &__card{
+    &__card {
         margin-top: 1rem;
         padding: 0.75rem;
         background-color: white;
         border-radius: 25px;
     }
 
-        &__titre{
-            font-family: "roboto";
-            font-weight: 700;
-        }
-        &__flex{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    &__titre {
+        font-family: "roboto";
+        font-weight: 700;
+    }
 
-        p{
-            margin-top: 8px;
-            margin-bottom: 0px;
-            font-size: 0.8rem;
-        }
-        &__price{
-            font-size: 1rem;
-            font-weight: bold;
-        }
-    
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    p {
+        margin-top: 8px;
+        margin-bottom: 0px;
+        font-size: 0.8rem;
+    }
+
+    &__price {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
 
 }
