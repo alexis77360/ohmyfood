@@ -140,3 +140,41 @@
     }
 
 }
+
+@media screen and (min-width: 768px) {
+    h2{
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width: 1024px)
+
+{
+
+    .fonct-container {
+        display: flex;
+        justify-content: center 
+    }
+    .fonct-card {
+        
+        flex: 1;
+        margin-right: 5rem;
+        max-width: 20rem;
+        
+    }
+    .resto-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between
+}
+.card{
+    min-width: 35rem;
+    width: 35rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+
+    flex: 1;
+}
+}
