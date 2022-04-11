@@ -181,6 +181,38 @@ body {
   bottom: 2rem;
 }
 
+@media screen and (min-width: 768px) {
+  h2 {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .fonct-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .fonct-card {
+    flex: 1;
+    margin-right: 5rem;
+    max-width: 20rem;
+  }
+
+  .resto-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card {
+    min-width: 35rem;
+    width: 35rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+    flex: 1;
+  }
+}
 .btn {
   background: #ff79da;
   background: linear-gradient(167deg, #ff79da 9%, #9356dc 81%);
@@ -233,6 +265,11 @@ footer h4 {
   line-height: 2rem;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-container {
+    text-align: center;
+  }
+}
 .bg-hero {
   width: 100%;
   height: 20rem;
@@ -302,6 +339,34 @@ footer h4 {
 .food__price {
   font-size: 1rem;
   font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .container-menu {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bg-hero {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+  }
+
+  .flex-menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .food__card {
+    min-width: 20rem;
+    margin-right: 2rem;
+  }
+  .food p {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
