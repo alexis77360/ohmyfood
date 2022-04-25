@@ -51,10 +51,28 @@
     }
 
     &__card {
+        position: relative;
         margin-top: 1rem;
         padding: 0.75rem;
         background-color: white;
         border-radius: 25px;
+        transition: 0.2s ease-in-out;
+        text-overflow: ellipsis;
+
+        &:hover {
+            padding-right: 5rem;
+        }
+   
+        &:hover .wrapper_check{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        &:hover .fa-check-circle{
+            animation: check-animation 0.5s;
+        }
+
     }
 
     &__titre {
@@ -80,7 +98,40 @@
     }
 
 }
+.wrapper_check{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    margin-left: 50px;
+    text-align: center;
+    height: 100%;
+    background-color: $green;
+    transition: 1s ease-in-out;
+    border-radius: 0 25px 25px 0px;
 
+}
+
+.fa-check-circle  {
+  transition: 1s ease-in-out;
+    color: white;
+}
+@keyframes check-animation {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+
+
+    }
+}
 /* //! Boucle apparation menu  */
 
 @for $i from 1 through 3 {
