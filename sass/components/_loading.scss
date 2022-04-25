@@ -1,0 +1,61 @@
+.loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #302f2f;
+    z-index: 9999;
+    animation: stop-spinner 3s both ease-in-out;
+
+
+
+}
+
+.fork {
+    position: absolute;
+    top: 40vh;
+    left: 45vw;
+    font-size: 10rem;
+    animation: fork-animation 3s both;
+
+}
+
+@keyframes fork-animation {
+    0% {
+        transform: rotate(0);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        color: $green;
+        transform: scale(2);
+    }
+
+    50% {
+        transform: rotate(900deg);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        color: $pink;
+    }
+
+    100% {
+        transform: rotate(1800deg);
+        color: $purple;
+
+
+    }
+}
+
+
+@keyframes stop-spinner {
+    0% {
+        opacity: 95%;
+
+    }
+
+    90% {
+        background-color: #302f2f;
+        opacity: 95%;
+    }
+
+    100% {
+        background-color: transparent;
+        opacity: 0%;
+        pointer-events: none;
+    }
+}
