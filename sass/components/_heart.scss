@@ -1,14 +1,17 @@
-
+svg {
+    overflow : visible;
+}
 .heart {
+
     fill: none;
     stroke: rgb(0, 0, 0, 0.8);
-    stroke-width: 3rem;
-    width: 3rem;
+    stroke-width: 2px;
+    stroke-opacity:  1;
+    
 
     &:hover {
         cursor: pointer;
         animation: heart-color 1s both;
-        stroke: none;
 
     }
 
@@ -18,19 +21,23 @@
     0% {
         transform: scale(0.8);
         opacity: 30%;
+        fill: $pink;
 
     }
 
     50% {
         transform: scale(0.8);
         opacity: 50%;
-
         fill: $purple;
+        stroke: none;
+
     }
 
     100% {
         transform: scale(1.2);
         opacity: 100%;
-        fill: $pink;
+        fill: url(#gradient);
+        stroke: none;
+
     }
 }

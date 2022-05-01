@@ -69,32 +69,38 @@ ul {
   padding: 0px;
 }
 
+svg {
+  overflow: visible;
+}
+
 .heart {
   fill: none;
   stroke: rgba(0, 0, 0, 0.8);
-  stroke-width: 3rem;
-  width: 3rem;
+  stroke-width: 2px;
+  stroke-opacity: 1;
 }
 .heart:hover {
   cursor: pointer;
   animation: heart-color 1s both;
-  stroke: none;
 }
 
 @keyframes heart-color {
   0% {
     transform: scale(0.8);
     opacity: 30%;
+    fill: #FF79DA;
   }
   50% {
     transform: scale(0.8);
     opacity: 50%;
     fill: #9356DC;
+    stroke: none;
   }
   100% {
     transform: scale(1.2);
     opacity: 100%;
-    fill: #FF79DA;
+    fill: url(#gradient);
+    stroke: none;
   }
 }
 h1, h4, h5, h6 {
