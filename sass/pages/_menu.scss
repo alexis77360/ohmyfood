@@ -51,93 +51,122 @@
     }
 
     &__card {
-        position: relative;
         margin-top: 1rem;
         padding: 0.75rem;
-        background-color: white;
         border-radius: 25px;
         transition: 0.2s ease-in-out;
-        text-overflow: ellipsis;
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
 
-        &:hover {
-            padding-right: 5rem;
-        }
-   
-        &:hover .wrapper_check{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    
-        &:hover .fa-check-circle{
-            animation: check-animation 0.5s;
+        &:hover .validation__box {
+            display: block;
+            animation: slide-left 0.5s ease;
+            transform-origin: right;
         }
 
-    }
+        &:hover .food__price {
+            padding-right: 70px;
+            transition: 0.5s ease;
+        }
 
-    &__titre {
-        font-family: "roboto";
-        font-weight: 700;
+        &:hover i {
+            animation: rotate 1s;
+        }
     }
 
     &__flex {
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    p {
-        margin-top: 8px;
-        margin-bottom: 0px;
-        font-size: 0.8rem;
+
+    &__wrapper-text {
+        white-space: nowrap;
+        overflow: hidden;
+
+        & p {
+            margin-top: 8px;
+            margin-bottom: 0px;
+            font-size: 0.8rem;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+    }
+
+
+    .food__titre {
+        font-weight: 900;
+        font-size: 1rem;
     }
 
     &__price {
         font-size: 1rem;
         font-weight: bold;
+        padding-right: 20px;
+        font-weight: bold;
+        padding-left: 1rem;
+        margin-top: 1.5rem;
     }
 
 }
-.wrapper_check{
+
+
+.validation__box {
     display: none;
     position: absolute;
-    right: 0;
-    top: 0;
-    width: 50px;
-    margin-left: 50px;
-    text-align: center;
-    height: 100%;
     background-color: $green;
-    transition: 1s ease-in-out;
-    border-radius: 0 25px 25px 0px;
+    border-radius: 0 25px 25px 0;
+    right: 0px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 100%;
 
+    i {
+        font-size: 30px;
+        line-height: 4.5rem;
+        color: white;
+    }
 }
 
-.fa-check-circle  {
-  transition: 1s ease-in-out;
-    color: white;
-}
-@keyframes check-animation {
+
+
+@keyframes rotate {
     0% {
         transform: rotate(0);
     }
 
-    50% {
-        transform: rotate(180deg);
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        transform: scaleX(0);
     }
 
     100% {
-        transform: rotate(360deg);
-
-
+        transform: scaleX(-50px);
     }
 }
+
+
+
+
 /* //! Boucle apparation menu  */
 
 @for $i from 1 through 3 {
-    .food_#{$i}
-    {
-        animation: opacity-menu  0.5s #{$i}s ease-in-out both ;
+    .food_#{$i} {
+        animation: opacity-menu 0.5s #{$i}s ease-in-out both;
     }
 }
 
@@ -150,9 +179,9 @@
         opacity: 1;
     }
 }
-    
 
 
+/* //! Responsive */
 
 @media screen and (min-width: 768px) {
     .container-menu {
@@ -172,12 +201,12 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        
+
     }
 
     .food {
         &__card {
-            
+            overflow: hidden;
             min-width: 20rem;
             margin-right: 2rem;
 
