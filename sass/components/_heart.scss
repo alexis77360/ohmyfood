@@ -1,43 +1,21 @@
 svg {
-    overflow : visible;
+    overflow: visible;
 }
+
 .heart {
 
-    fill: none;
+    fill: url(#gradient);
+    fill-opacity: 0;
     stroke: rgb(0, 0, 0, 0.8);
     stroke-width: 2px;
-    stroke-opacity:  1;
-    
+    stroke-opacity: 1;
+    transition: all 0.5s ease-in-out;
 
     &:hover {
         cursor: pointer;
-        animation: heart-color 1s both;
-
-    }
-
-}
-
-@keyframes heart-color {
-    0% {
-        transform: scale(0.8);
-        opacity: 30%;
-        fill: $pink;
-
-    }
-
-    50% {
-        transform: scale(0.8);
-        opacity: 50%;
-        fill: $purple;
-        stroke: none;
-
-    }
-
-    100% {
-        transform: scale(1.2);
-        opacity: 100%;
-        fill: url(#gradient);
-        stroke: none;
+        fill-opacity: 1;
+        stroke-opacity: 0;
+        transition: all 1s ease-in-out;
 
     }
 }
