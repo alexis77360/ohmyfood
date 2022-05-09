@@ -36,7 +36,7 @@
     h2 {
         margin-bottom: 1.5rem;
         font-weight: 700;
-        
+
     }
 
     p {
@@ -53,6 +53,15 @@
     border-radius: 1.5rem;
     box-shadow: 4px 4px 3px 0px rgba(58, 56, 56, 0.1);
     position: relative;
+
+    &:hover {
+        background-color: #f5edff;
+        transition: all 0.5s ease-in-out;
+    }
+
+    &:hover .fonct-card__icon {
+        color: $purple;
+    }
 
     &__number {
         position: absolute;
@@ -97,7 +106,7 @@
         margin-top: 1.5rem;
         position: relative;
 
-        
+
 
         img {
             object-fit: cover;
@@ -131,6 +140,7 @@
             margin-top: -0.5rem;
             position: relative;
         }
+
         &__icon {
             position: absolute;
             right: 0;
@@ -143,41 +153,40 @@
 }
 
 @media screen and (min-width: 768px) {
-    h2{
+    h2 {
         text-align: center;
     }
 }
 
 
-@media screen and (min-width: 1024px)
-
-{
+@media screen and (min-width: 1024px) {
 
     .fonct-container {
         display: flex;
-        justify-content: center 
+        justify-content: center
     }
+
     .fonct-card {
-        
+
         flex: 1;
         margin-right: 5rem;
         max-width: 20rem;
-        
+
     }
+
     .resto-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between
-}
-.card{
-    min-width: 35rem;
-    width: 35rem;
-    margin-right: 4rem;
-    margin-left: 4rem;
-    margin-bottom: 2rem;
+    }
 
-    flex: 1;
-}
-}
+    .card {
+        min-width: 35rem;
+        width: 35rem;
+        margin-right: 4rem;
+        margin-left: 4rem;
+        margin-bottom: 2rem;
 
-
+        flex: 1;
+    }
+}

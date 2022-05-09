@@ -65,20 +65,22 @@
         box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
 
         &:hover .validation__box {
-            display: block;
-            animation: slide-left 0.5s ease;
-            transform-origin: right;
+            
+            transform: translate(0px, 0px);
+            transition: all 0.5s ease-in-out;    
         }
 
-        &:hover .food__price {
-            padding-right: 70px;
-            transition: 0.5s ease;
+        &:hover .food__flex {
+        width: 85%;
+        transition: 0.5s ease-in-out;
         }
 
         &:hover i {
-            animation: rotate 1s;
+            transform: rotate(360deg) ;
+            transition: 0.8s ease;
         }
     }
+    
 
     &__flex {
         width: 100%;
@@ -102,7 +104,6 @@
 
     }
 
-
     .food__titre {
         font-weight: 900;
         font-size: 1rem;
@@ -121,8 +122,9 @@
 
 
 .validation__box {
-    display: none;
     position: absolute;
+    transform: translate(70px, 0px);
+    transition: all 0.5s ease-in-out;
     background-color: $green;
     border-radius: 0 25px 25px 0;
     right: 0px;
@@ -131,35 +133,14 @@
     height: 100%;
 
     i {
+        
         font-size: 30px;
         line-height: 4.5rem;
         color: white;
+        transform: rotate(160deg) ;
+        transition: 0.7s ease;
     }
 }
-
-
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes slide-left {
-    0% {
-        transform: scaleX(0);
-    }
-
-    100% {
-        transform: scaleX(-50px);
-    }
-}
-
-
 
 
 /* //! Boucle apparation menu  */

@@ -74,35 +74,20 @@ svg {
 }
 
 .heart {
-  fill: none;
+  fill: url(#gradient);
+  fill-opacity: 0;
   stroke: rgba(0, 0, 0, 0.8);
   stroke-width: 2px;
   stroke-opacity: 1;
+  transition: all 0.5s ease-in-out;
 }
 .heart:hover {
   cursor: pointer;
-  animation: heart-color 1s both;
+  fill-opacity: 1;
+  stroke-opacity: 0;
+  transition: all 1s ease-in-out;
 }
 
-@keyframes heart-color {
-  0% {
-    transform: scale(0.8);
-    opacity: 30%;
-    fill: #FF79DA;
-  }
-  50% {
-    transform: scale(0.8);
-    opacity: 50%;
-    fill: #9356DC;
-    stroke: none;
-  }
-  100% {
-    transform: scale(1.2);
-    opacity: 100%;
-    fill: url(#gradient);
-    stroke: none;
-  }
-}
 h1, h4, h5, h6 {
   font-family: Shrikhand;
 }
@@ -189,6 +174,13 @@ body {
   border-radius: 1.5rem;
   box-shadow: 4px 4px 3px 0px rgba(58, 56, 56, 0.1);
   position: relative;
+}
+.fonct-card:hover {
+  background-color: #f5edff;
+  transition: all 0.5s ease-in-out;
+}
+.fonct-card:hover .fonct-card__icon {
+  color: #9356DC;
 }
 .fonct-card__number {
   position: absolute;
@@ -424,16 +416,16 @@ footer h4 {
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
 }
 .food__card:hover .validation__box {
-  display: block;
-  animation: slide-left 0.5s ease;
-  transform-origin: right;
+  transform: translate(0px, 0px);
+  transition: all 0.5s ease-in-out;
 }
-.food__card:hover .food__price {
-  padding-right: 70px;
-  transition: 0.5s ease;
+.food__card:hover .food__flex {
+  width: 85%;
+  transition: 0.5s ease-in-out;
 }
 .food__card:hover i {
-  animation: rotate 1s;
+  transform: rotate(360deg);
+  transition: 0.8s ease;
 }
 .food__flex {
   width: 100%;
@@ -466,8 +458,9 @@ footer h4 {
 }
 
 .validation__box {
-  display: none;
   position: absolute;
+  transform: translate(70px, 0px);
+  transition: all 0.5s ease-in-out;
   background-color: #99E2D0;
   border-radius: 0 25px 25px 0;
   right: 0px;
@@ -479,24 +472,10 @@ footer h4 {
   font-size: 30px;
   line-height: 4.5rem;
   color: white;
+  transform: rotate(160deg);
+  transition: 0.7s ease;
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes slide-left {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(-50px);
-  }
-}
 /* //! Boucle apparation menu  */
 .food_1 {
   animation: opacity-menu 0.5s 1s ease-in-out both;
