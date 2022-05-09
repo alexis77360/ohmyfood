@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+    "build": "sass ./sass/main.scss:./public/css/style.min.css --style compressed"
   },
   "repository": {
     "type": "git",
