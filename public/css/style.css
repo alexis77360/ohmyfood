@@ -519,8 +519,8 @@ footer h4 {
 
   .food__card {
     overflow: hidden;
-    min-width: 22rem;
-    margin-right: 2rem;
+    min-width: 55rem;
+    margin-right: 20rem;
   }
   .food p {
     font-size: 14px;
