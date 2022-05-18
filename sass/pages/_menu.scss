@@ -137,8 +137,8 @@
         font-size: 30px;
         line-height: 4.5rem;
         color: white;
-        transform: rotate(160deg) ;
-        transition: 0.7s ease;
+        transform: rotate(-360deg) ;
+        transition: 0s ease;
     }
 }
 
@@ -188,8 +188,8 @@
     .food {
         &__card {
             overflow: hidden;
-            min-width: 22rem;
-            margin-right: 2rem;
+            min-width: 100%;
+            margin-right: 0.5rem;
 
 
         }
@@ -202,3 +202,13 @@
 
 
 }
+
+@media screen and (min-width: 1024px) {
+
+    .food {
+        &__card {
+            min-width: 22rem;
+
+        }
+
+}}
