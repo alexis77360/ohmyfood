@@ -1,5 +1,4 @@
-# ohmyfood
-Openclassrooms projet
+# ohmyfood Projet Openclassrooms #
 
 Cahier des charges
 Page d’accueil
